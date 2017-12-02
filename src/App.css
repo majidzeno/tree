@@ -1,0 +1,128 @@
+.TreeApp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /*justify-content: space-evenly;*/ }
+
+img {
+  /*  width: 20%;
+  height: 20%;*/ }
+
+.header {
+  border-bottom: 1px solid #f86414;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4em; }
+
+.logo {
+  /*border:2px solid black;*/ }
+  .logo img {
+    width: 4em;
+    height: auto; }
+
+.searchBox {
+  padding-left: 1em;
+  font-size: -9.5em;
+  margin: 1em; }
+
+.user {
+  /*	border:2px solid red;*/
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer; }
+  .user__avatar img {
+    width: 3em;
+    /*cursor: pointer;*/ }
+
+.inbox-button, .love-button {
+  /*	border:2px solid green;*/
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3em;
+  color: #60dbfa; }
+
+.app-body {
+  border: 3px solid red;
+  display: flex; }
+
+.sidebar {
+  /*	border:2px solid yellowgreen;*/
+  border-right: 1px solid #f86414;
+  /*width:25%;*/
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 1em 0; }
+
+.list {
+  width: 100%; }
+  .list__title {
+    text-align: center;
+    /*		border:1px solid green;*/
+    font-size: 1.5em;
+    padding: .3em;
+    /*font-weight: 600;*/
+    letter-spacing: 4px;
+    text-transform: uppercase; }
+  .list__items {
+    list-style: none;
+    padding: 0;
+    /*border:1px solid aqua;*/ }
+  .list__item {
+    /*border:1px solid black;*/
+    display: flex;
+    align-items: center; }
+
+.actions {
+  padding: 0;
+  margin: 0 auto;
+  padding: 0 4em;
+  padding-bottom: 1.5em; }
+
+.action {
+  /*justify-content: space-between;*/
+  padding: .5em; }
+  .action__logo {
+    font-size: 1.5em;
+    margin-right: .5em; }
+    .action__logo i {
+      width: 24px; }
+
+.friend {
+  display: flex;
+  /*justify-content: end;*/
+  align-items: center;
+  margin-left: 1em;
+  width: 90%;
+  box-shadow: 0px 0.3px 0px #f86414; }
+  .friend__avatar {
+    flex: 1; }
+    .friend__avatar img {
+      width: 2.5em;
+      display: block;
+      margin: 0 auto;
+      padding: .4em 0; }
+  .friend__name {
+    flex: 2; }
+  .friend__status {
+    flex: .5;
+    color: #f86414; }
+
+.contentBox {
+  border: 2px solid pink;
+  flex: 3; }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1em; }
+
+.tracks {
+  border: 2px solid red; }
+
+.footer {
+  border: 2px solid purple; }

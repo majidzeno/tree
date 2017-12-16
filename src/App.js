@@ -8,11 +8,9 @@ import user from './man.svg';
 
 
 
-class treeApp extends Component {
-  render() {
-    return (
-      <div className="TreeApp">
-        <div className="header">
+function Header (){
+	return(
+		<div className="header">
 			<div className="logo"><a href="#" className="">
 				<img src={logo} alt="logo"/>
 			</a></div>
@@ -25,6 +23,15 @@ class treeApp extends Component {
 				<div className="user__name">Majid Eltayeb</div>
 			</div>
         </div>
+		);
+}
+
+
+class treeApp extends Component {
+  render() {
+    return (
+      <div className="TreeApp">
+        <Header />
         <div className="app-body">
 	        <div className="sidebar">
 				<div className="list">

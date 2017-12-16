@@ -2,6 +2,7 @@
   "name": "tree",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://majidzeno.github.io/tree",
   "dependencies": {
     "axios": "^0.17.1",
     "font-awesome": "^4.7.0",
@@ -23,6 +24,10 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy" : "npm run build&&gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }

@@ -71,7 +71,7 @@ img {
     list-style: none;
     padding: 0;
     /*border:1px solid aqua;*/ }
-  .list__item {
+  .list__item a {
     /*border:1px solid black;*/
     display: flex;
     align-items: center; }

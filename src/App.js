@@ -75,25 +75,25 @@ const MainListItems = [
 const FriendListItems = [
 	{
 		name : "Wael",
-		url : {wael},
+		url : wael,
 	},
 	{
 		name : "Sarah",
-		url : {sarah},
+		url : sarah,
 	},
 
 	{
 		name : "Shady",
-		url : {shady},
+		url : shady,
 	},
 	{
 		name : "Samar",
-		url : {samar},
+		url : samar,
 	},
 
 	{
 		name : "Ali",
-		url : {ali},
+		url : ali,
 	},
 
 ]
@@ -116,7 +116,7 @@ function MainList(){
 function FriendListItem(props){
 	return(
 		<li className="list__item friend">
-			<div className="friend__avatar"><img src={`${props.imageUrl}`} alt="user-avatar"/></div>
+			<div className="friend__avatar"><img src={`${props.url}`} alt="user-avatar"/></div>
 			<div className="friend__name">{props.name}</div>
 			<div className="friend__status"><i className="fa fa-dot-circle-o" aria-hidden="true"></i></div>
 		</li>
@@ -129,11 +129,9 @@ function FriendList(){
 		<div className="list">
 			<div className="list__title">Friends</div>
 			<ul className="list__items">
-				<FriendListItem name="Wael" imageUrl="https:image.flaticon.com/icons/svg/206/206853.svg"/>
-				<FriendListItem name="Sarah" imageUrl="https:image.flaticon.com/icons/svg/206/206897.svg"/>
-				<FriendListItem name="Shady" imageUrl="https:image.flaticon.com/icons/svg/206/206901.svg"/>
-				<FriendListItem name="Samar" imageUrl="https:image.flaticon.com/icons/svg/206/206864.svg"/>
-				<FriendListItem name="Ali" imageUrl="https:image.flaticon.com/icons/svg/206/206860.svg"/>
+				{FriendListItems.map(function(friendListItem){
+					return <FriendListItem name={friendListItem.name} url={friendListItem.url} />
+				})}
 			</ul>
 		</div>
 	)
